@@ -146,3 +146,8 @@ fi
 if [ -f "$GITHUB_WORKSPACE/Scripts/Docker.sh" ]; then
     "$GITHUB_WORKSPACE/Scripts/Docker.sh" "$GITHUB_WORKSPACE/wrt"
 fi
+
+# Qualcommax Linux 6.18 内核补丁
+if [ -f "$GITHUB_WORKSPACE/Scripts/qca-6.18-patch.sh" ]; then
+    "$GITHUB_WORKSPACE/Scripts/qca-6.18-patch.sh"
+fi
